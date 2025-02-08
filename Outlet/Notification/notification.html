@@ -1,0 +1,23 @@
+<h3 class="fw-bold fs-4 mb-3">Notifications</h3>
+<!-- Send Notification Section -->
+<div class="row">
+<div class="col-12 col-md-6">
+    <form id="notification-form">
+        <div class="mb-3">
+            <label for="message" class="form-label">Send Message to <span id="outlet-name"></span> Customers</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="send-btn">Send Notification</button>
+    </form>
+</div>
+<div class="col-12 col-md-6">
+    <h4 class="fw-bold fs-5">Sent Notifications</h4>
+    <div id="sent-notifications-container" class="mt-4">
+        <!-- Notifications will be dynamically inserted here -->
+    </div>
+</div>
+</div>
+<h4 class="fw-bold fs-5 mb-3">Received Notifications</h4>
+<div id="notifications-container" class="mt-4">
+    <!-- Notifications will be dynamically inserted here -->
+</div>

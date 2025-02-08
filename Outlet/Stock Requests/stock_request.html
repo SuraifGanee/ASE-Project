@@ -1,0 +1,55 @@
+<div class="mb-3">
+    <h3 class="fw-bold fs-4 mb-3">Stock Request Page</h3>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="card shadow">
+                <div class="card-body py-4">
+                    <h6 class="mb-2 fw-bold">Current Stock</h6>
+                    <p class="fw-bold mb-2 text-primary current-stock">Loading...</p>
+                </div>
+            </div>               
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="card shadow">
+                <div class="card-body py-4">
+                    <h6 class="mb-2 fw-bold">Requested Quantities</h6>
+                    <p class="fw-bold mb-2 text-success requested-quantities">Loading...</p>
+                </div>
+            </div>
+        </div>                                                    
+    </div>
+</div>
+<div class="container mt-5">
+    <form id="stock-request-form">
+        <h4 class="text-center">Request for Gas Cylinders to the Head Office</h4>
+        <div class="form-group">
+            <input type="number" class="form-control" id="quantity" placeholder="Enter quantity of cylinders" required>
+        </div>
+        <label class="text-center" for="scheduleDate" id="l-sc">Choose your schedule date</label>
+        <input type="date" class="form-control" id="scheduleDate" required>    
+        <input type="number" class="form-control" id="maxLimit" placeholder="Enter the maximum limit for your schedule" required>
+        <div class="button-container">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+<!-- Gas Request Table -->
+<div>
+    <h4 class="mb-4" id="history">Gas Requests History</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped text-center">
+            <thead class="table-primary">
+                <tr>
+                    <th>#</th>
+                    <th>Request ID</th>
+                    <th>Requested Quantity</th>
+                    <th>Requested Date</th>
+                    <th>Scheduled Delivery Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="gas-request-table-body"> 
+            </tbody>
+        </table>
+    </div>
+</div>

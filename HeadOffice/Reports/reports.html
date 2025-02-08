@@ -1,0 +1,43 @@
+<h3 class="fw-bold fs-4 mb-3">Reports Page</h3>
+<div class="container mt-5">
+
+<!-- Outlet Requests Table -->
+<h5 class="fw-bold" id="t-d">Dispatched Stock Details</h5>
+  <table class="table table-bordered table-striped text-center">
+      <thead class="table-primary">
+        <tr>
+            <th>Outlet Name</th>
+            <th>Requested Date</th>
+            <th>Dispatched Date</th>
+            <th>Stock Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="Dispatched-stock">
+        <!-- Rows will be added dynamically here -->
+      </tbody>
+  </table>
+
+  <!-- Button to generate PDF -->
+  <button class="btn btn-primary dispatch-report-button" onclick="generateDispatchPDF()">Download Dispatched Report</button>
+</div>
+
+<div class="container mt-5">
+  <h5 class="fw-bold" id="t-d">Sales Details</h5>
+  <table class="table table-bordered table-striped text-center">
+    <thead class="table-primary">
+      <tr>
+          <th>Outlet Name</th>
+          <th>Gas Quantity</th>
+          <th>Received Date</th>
+          <th>Sales Amonut</th>
+      </tr>
+    </thead>
+    <tbody id="sales">
+      <!-- Rows will be added dynamically here -->
+    </tbody>
+  </table>
+
+  <!-- Button to generate PDF -->
+  <button class="btn btn-primary sales-report-button" onclick="generateSalesPDF()">Download Sales Report</button>
+</div>
+

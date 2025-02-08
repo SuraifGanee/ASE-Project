@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+    background: #fff;
+}
+
+#sidebar {
+    width: 90px;
+    min-width: 90px;
+    transition: all 0.25s ease-in-out;
+    background-color: #0b0f19;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar.expand {
+    width: 300px;
+    min-width: 300px;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.toggle-btn {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 0.425rem;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323c55;
+}
+
+.toggle-btn i {
+    color: #fff;
+}
+
+#sidebar.expand .sidebar-logo,
+#sidebar.expand a.sidebar-link span {
+    animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sidebar-logo a {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    padding: 0.7rem 0;
+    flex: 11 auto;
+    z-index: 10;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #fff;
+    display: block;
+    white-space: nowrap;
+    font-weight: 600;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: .9rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(255,255,255,.075);
+    border-left: 3px solid #3b7ddd;
+}
+
+.sidebar-item {
+    position: relative;
+}
+/*.............*/
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    background-color: #0e2238;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown .sidebar-dropdown {
+    left: 130px;
+}
+/*.............*/
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 0 2rem 0 rgba(33,37,41,.1);
+}
+
+.navbar-expand .navbar-collapse {
+    min-width: 200px;
+}
+
+.form-control:focus {
+    border-color: #939598;
+    box-shadow: 0 0 0 0.25rem rgba(255,255,255,.075);
+
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.card {
+    background-color: #fff;
+    transition: 4s;
+    cursor: pointer;
+    color: #000;
+    margin-bottom: 1rem;
+    border-color: rgba(231,234,243,0.7);
+}
+
+.card h6 {
+    text-transform: uppercase;
+    font-size: .8161rem;
+    margin-bottom: .25rem;
+}
+
+.card:hover {
+    background-color: #293b5f;
+    color: #fff;
+    transform: translateY(-10.5px);
+}
+
+.content {
+    flex: 11 auto;
+}
+
+.chart-section {
+    padding: 20px; /* Add spacing around the chart section */
+    background-color: #f8f9fa; /* Light background to differentiate the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better aesthetics */
+}
+
+.chart-container {
+    position: relative;
+    max-width: 100%; /* Responsive width */
+    height: 400px; /* Fixed height for better display */
+    margin: 0 auto; /* Center align the chart */
+}
+
+#chart-text {
+    margin-left: 100px;
+    margin-top: 180px;
+}
+
+@media(min-width:768px) {
+    .input-group-navbar .form-control:focus{
+        outline: none;
+        box-shadow: 0 0 0 0 rgba(255,255,255);
+        border: none;
+        background-color: #f5f5f5;
+    }
+
+    .input-group-navbar{
+        max-width: 320px;
+    }
+
+    .input-group-navbar .form-control{
+        color: #3e4455;
+        background-color: #f5f5f5;
+        height:calc(2.44375rem+2px)
+    }
+
+    .input-group-navbar .btn {
+        color: #000;
+        background-color: #f5f5f5;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .input-group-navbar .btn:active {
+        background-color: #f5f5f5;
+    }
+
+    .navbar-expand .navbar-nav .dropdown-menu{
+        box-shadow: 0.1rem .2rem rgba(0,0,0,0.05);
+    }
+}

@@ -1,0 +1,50 @@
+<div>
+    <h3 class="fw-bold fs-4 mb-3">Outlet Management</h3>
+    <div class="mb-4 d-flex align-items-center">
+        <label for="outletSelect" class="form-label me-2">Choose Outlet:</label>
+        <div class="input-group">
+            <select id="outletSelect" class="form-select outlet-select">
+                <!-- Options will be dynamically populated -->
+            </select>            
+            <button id="enterButton" class="btn btn-primary">Enter</button>
+        </div>
+    </div>
+
+        <!-- Outlet Details -->
+        <div class="details-box mb-4">
+            <h5>Outlet Details</h5>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <p><strong>Name:</strong> <span id="outletName">Loading...</span></p>
+                    <p><strong>Location:</strong> <span id="outletLocation">Loading...</span></p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p><strong>Stock:</strong> <span id="outletStock">Loading...</span></p>
+                    <p><strong>Contact:</strong> <span id="outletContact">Loading...</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Associated Token Details -->
+        <div>
+            <h5>Associated Customers Token Details</h5>
+            <table class="display table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Customer Name</th>
+                        <th>Type</th>
+                        <th>Issue Date</th>
+                        <th>Expected Delivery Date</th>
+                        <th>Gas Quantity</th>
+                        <th>Payment & Empty</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tokenDetails">
+                    <!-- Rows will be dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+

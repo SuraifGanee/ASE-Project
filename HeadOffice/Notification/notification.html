@@ -1,0 +1,31 @@
+<h3 class="fw-bold fs-4 mb-4">Notification Page</h3>
+    <div class="container mt-3">
+
+        <div class="row">
+            <!-- Send Notification Section -->
+            <div class="col-12 col-md-6">
+                <h5 class="fw-bold fs-6 mb-4">Send Message to Outlets / Customers</h5>
+                <form id="notification-form">
+                    <div class="mb-3">
+                        <label for="recipient" class="form-label">Recipient Type</label>
+                        <select class="form-select" id="recipient" required>
+                            <!-- Options will be dynamically populated -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="sent-btn">Send Notification</button>
+                </form>
+            </div>
+
+            <!-- Sent Messages History Section -->
+            <div class="col-12 col-md-6">
+                <h5 class="fw-bold fs-6 mb-4">Sent Notifications</h5>
+                <div id="message-history-container" class="border p-3">
+                    <p class="text-muted">No messages sent yet.</p>
+                </div>
+            </div>
+        </div>
+    </div>

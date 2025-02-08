@@ -1,0 +1,43 @@
+<div class="mb-3">
+    <h3 class="fw-bold fs-4 mb-3">Token Verification Page</h3>
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="card shadow">
+                    <div class="card-body py-4">
+                        <h6 class="mb-2 fw-bold">Total Tokens Issued</h6>
+                        <p class="fw-bold mb-2 text-primary token-issued">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="row">
+    <div class="col-12 col-md-5">
+        <div id="details-container" class="mt-3">
+            <h4 class="fw-bold" id="t-d">Token Details</h4>
+            <div class="d-flex align-items-center" id="t-id-div">
+                <input type="text" class="form-control me-2" id="token-id" placeholder="Enter the Token ID" required>
+                <button type="submit" class="btn btn-primary" id="enter-btn">Enter</button>
+            </div>
+            <p id="details">Fetching details...</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-7">
+        <h4 class="fw-bold" id="t-d">Tokens Not Yet Handover Payment & Empty</h4>
+        <table class="table table-bordered table-striped text-center">
+            <thead class="table-primary">
+              <tr>
+                <th>Token ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Expected Delivery Date</th>
+                <th>Schedule</th>
+                <th>Mobile</th>
+              </tr>
+            </thead>
+            <tbody id="unpaid-not-handover">
+              <!-- Rows will be added dynamically here -->
+            </tbody>
+        </table>          
+    </div>
+</div>

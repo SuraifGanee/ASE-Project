@@ -1,0 +1,22 @@
+#token-id {
+    border-color: #6f6f6f;
+    width: 250px;
+}
+
+#t-id-div {
+    margin-bottom: 10px;
+}
+
+#t-d {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#expected-delivery-date {
+    border-color: #6f6f6f;
+    width: 250px;
+}
+
+#p-e-btn, #hand-btn {
+    margin-left: 5px;
+}

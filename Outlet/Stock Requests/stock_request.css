@@ -1,0 +1,53 @@
+h4 {
+    margin-top: -20px;
+}
+
+.form-group {
+    margin: auto;
+    height: 50px;
+    width: 300px;
+    border-color: #000;
+}
+
+#quantity {
+    margin-top: 15px;
+}
+
+#maxLimit {
+    margin-top: 10px;
+    width: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-label{
+    display: flex;
+    justify-content: center;
+}
+
+#l-sc{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#scheduleDate {
+    margin-top: 10px;
+    width: 350px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#history {
+    margin-top: 30px;
+}

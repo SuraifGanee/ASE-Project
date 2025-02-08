@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GasByGas</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./Images/logo1.jpeg" alt="GBG Logo" class="logo-img" />
+            </div>
+            <div class="nav-text">
+                <h1>GasByGas</h1>
+                <p>Bringing Energy to Every Corner of Sri Lanka!</p>
+            </div>
+        </div>
+        <div class="loginbtn">
+            <button class="btnLogin-popup" id="btnLogin-popup">Login</button>
+        </div>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" id="login-btn" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

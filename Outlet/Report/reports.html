@@ -1,0 +1,44 @@
+<h3 class="fw-bold fs-4 mb-3">Reports</h3>
+<div class="container mt-5">
+
+<!-- Outlet Requests Table -->
+<h4 class="fw-bold" id="t-d">Requests to Dispatch Office</h4>
+  <table class="table table-bordered table-striped text-center">
+      <thead class="table-primary">
+        <tr>
+            <th>Request Date</th>
+            <th>Scheduled Delivery Date</th>
+            <th>Requested Quantity</th>
+            <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="outlet-request">
+        <!-- Rows will be added dynamically here -->
+      </tbody>
+  </table>
+
+  <button class="btn btn-primary report-button-request" onclick="generateRequestPDF()">Download Request Report</button>
+
+
+  <h4 class="fw-bold" id="t-d-2">Tokens Issued to Customers</h4>
+  <table class="table table-bordered table-striped text-center">
+      <thead class="table-primary">
+        <tr>
+            <th>Token ID</th>
+            <th>Customer Name</th>
+            <th>Type</th>
+            <th>Token Issue Date</th>
+            <th>Expected Delivery Date</th>
+            <th>Quantity</th>
+            <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="customer-request">
+        <!-- Rows will be added dynamically here -->
+      </tbody>
+  </table>
+
+  <!-- Button to generate PDF -->
+  <button class="btn btn-primary report-button-token" onclick="generateTokenPDF()">Download Token Report</button>
+</div>
+
